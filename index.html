@@ -1,62 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <title>Chillz & Cravings Cafe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chillz & Craving Cafe</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+    }
+
+    header {
+      background-color: #ff5733;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #ff5733;
+    }
+
+    h3 {
+      margin-top: 25px;
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 6px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .contact {
+      background-color: #ffe5d9;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ff5733;
+      color: white;
+      padding: 10px;
+    }
+
+    a {
+      color: #ff5733;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="navbar">
-  <h2>Chillz & Craving Cafe</h2>
+<header>
+  <h1>Chillz & Cravings Cafe</h1>
+  <p>Near High Sec. School, Begun</p>
+</header>
+
+<section>
+  <h2>🍽 Our Menu</h2>
+
+  <h3>🥟 Momos (6 pcs)</h3>
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><strong>Steam</strong> – Veg ₹60 | Paneer ₹70</li>
+    <li><strong>Fried</strong> – Veg ₹70 | Paneer ₹80 | Cheese Corn ₹80</li>
+    <li><strong>Gravy</strong> – Veg ₹100 | Paneer ₹100</li>
+    <li><strong>Kurkure</strong> – Veg ₹90 | Paneer ₹100 | Cheese Corn ₹100</li>
   </ul>
-</div>
 
-<section id="home" class="hero">
-  <div class="hero-content">
-    <h1>Chill. Eat. Repeat. 😋</h1>
-    <p>Best hangout spot near High Sec. School, Begun</p>
-    <button onclick="orderNow()">Order on WhatsApp</button>
-  </div>
+  <h3>🍜 Maggie</h3>
+  <ul>
+    <li>Plain Maggie – ₹40</li>
+    <li>Masala Veg Maggie – ₹60</li>
+    <li>Cheese Butter Maggie – ₹80</li>
+  </ul>
+
+  <h3>🥢 Chinese</h3>
+  <ul>
+    <li>Spring Roll (4 pcs) – ₹100</li>
+    <li>Cheese Balls (8 pcs) – ₹100</li>
+    <li>Hara Bhara Kabab (10 pcs) – ₹100</li>
+    <li>Manchurian – ₹50</li>
+    <li>Chowmein – ₹50</li>
+  </ul>
+
+  <h3>🍕 Pizza</h3>
+  <ul>
+    <li>Cheese Pizza – ₹90</li>
+    <li>Veg Cheese Pizza – ₹120</li>
+    <li>Veg Double Cheese Pizza – ₹160</li>
+    <li>Paneer Cheese Pizza – ₹140</li>
+    <li>Veg Sweet Corn Cheese Pizza – ₹140</li>
+    <li>Farm House Pizza – ₹160</li>
+    <li>Chillz & Cravings Special Pizza – ₹180</li>
+    <li>Jain Veg Cheese Pizza – ₹120</li>
+  </ul>
+
+  <h3>🥤 Shakes</h3>
+  <ul>
+    <li>Vanilla / Rose / Chocolate – ₹50</li>
+    <li>KitKat / Oreo / Butterscotch – ₹60</li>
+    <li>Brownie Shake – ₹80</li>
+  </ul>
+
+  <h3>🍹 Mocktails (Mojito)</h3>
+  <ul>
+    <li>Blue Lagoon – ₹60</li>
+    <li>Green Mint – ₹60</li>
+    <li>Virgin Mint – ₹60</li>
+    <li>Green Apple – ₹60</li>
+    <li>Black Current – ₹60</li>
+  </ul>
+
+  <h3>☕ Hot Beverages</h3>
+  <ul>
+    <li>Tea – ₹15</li>
+    <li>Masala Tea – ₹20</li>
+    <li>Hot Coffee – ₹30</li>
+  </ul>
+
+  <h3>🍦 Ice Cream</h3>
+  <ul>
+    <li>Vanilla / Chocolate – ₹30</li>
+    <li>Butterscotch Cone – ₹30</li>
+    <li>Chocolate Cone – ₹30</li>
+    <li>Fingo Brown Cone – ₹40</li>
+    <li>Mango Dolly – ₹20</li>
+    <li>Chocobar – ₹20</li>
+    <li>Fantastic – ₹40</li>
+  </ul>
+
+  <h3>🥪 Sandwich Grill</h3>
+  <ul>
+    <li>Mini Sandwich – ₹40</li>
+    <li>Mini Veg Cheese Sandwich – ₹60</li>
+    <li>Jumbo Veg Sandwich – ₹80</li>
+    <li>Jumbo Veg Cheese Sandwich – ₹100</li>
+    <li>Jumbo Veg Sweet Corn Cheese – ₹100</li>
+    <li>Jumbo Paneer Double Cheese – ₹120</li>
+    <li>Jain Veg Cheese Sandwich – ₹100</li>
+  </ul>
+
+  <h3>🍟 French Fries</h3>
+  <ul>
+    <li>Plain Fries – ₹50</li>
+    <li>Peri Peri Fries – ₹60</li>
+    <li>Masala Fries – ₹80</li>
+  </ul>
+
+  <h3>🍔 Burger</h3>
+  <ul>
+    <li>Veg Burger – ₹50</li>
+    <li>Veg Cheese Burger – ₹60</li>
+    <li>Veg Paneer Cheese Burger – ₹80</li>
+    <li>Veg Sweet Corn Cheese Burger – ₹80</li>
+  </ul>
+
+  <h3>🧋 Cold Coffee</h3>
+  <ul>
+    <li>Regular Cold Coffee – ₹50</li>
+    <li>Cold Coffee with Ice Cream – ₹60</li>
+    <li>Jumbo Cold Coffee – ₹60</li>
+    <li>Jumbo Cold Coffee with Ice Cream – ₹80</li>
+    <li>Chillz & Cravings Special Thick Coffee – ₹100</li>
+    <li>Hazelnut Coffee – ₹70</li>
+  </ul>
+
 </section>
 
-<section id="menu" class="menu">
-  <h2>Our Popular Menu</h2>
-  <div class="menu-items">
-    <div class="item"><h3>Cold Coffee</h3><p>₹120</p></div>
-    <div class="item"><h3>Spring Roll</h3><p>₹90</p></div>
-    <div class="item"><h3>Pizza</h3><p>₹199</p></div>
-    <div class="item"><h3>Sandwich</h3><p>₹80</p></div>
-    <div class="item"><h3>Chilli Potato</h3><p>₹110</p></div>
-  </div>
-</section>
+<section class="contact">
+  <h2>📞 Contact Us</h2>
+  <p>Phone: 9636038993</p>
+  <p>Instagram: <a href="https://www.instagram.com/chilzzandcravings" target="_blank">Click Here</a></p>
 
-<section class="delivery">
-  <h2>🚚 Home Delivery Available</h2>
-  <p>Call or WhatsApp us for quick delivery in Begun.</p>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Visit Us</h2>
-  <p>📍 Near High Sec. School, Begun</p>
-  <p>📞 9636038993</p>
-  <p>
-    📸 Instagram:
-    <a href="https://www.instagram.com/chilzzandcravings" target="_blank">
-      @chilzzandcravings
-    </a>
-  </p>
+  <h3>🚚 Home Delivery Details</h3>
+  <ul>
+    <li>Begun Local Area – Minimum Order ₹200</li>
+    <li>Within 5 km Radius – Minimum Order ₹400 (Free Delivery)</li>
+    <li>Beyond 5 km – ₹6 per km Delivery Charges</li>
+  </ul>
 </section>
 
 <footer>
-  <p>© 2026 Chillz & Craving Cafe | All Rights Reserved</p>
+  <p>© 2026 Chillz & Cravings Cafe | All Rights Reserved</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
